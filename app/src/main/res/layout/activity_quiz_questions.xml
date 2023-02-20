@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizQuestionsActivity">
+
+    <TextView
+        android:id="@+id/tvQn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="tvvv"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/india"
+        android:contentDescription="@string/flag" />
+
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="check"
+        android:tag="1"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="10dp"
+        android:tag="2"
+        android:onClick="check"
+         />
+
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="10dp"
+        android:onClick="check"
+        android:tag="3"
+         />
+
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="check"
+        android:tag="4"
+        android:backgroundTint="@color/purple_500"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="10dp"
+            android:onClick="result"
+            android:text="@string/submit"
+
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="next"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="10dp"
+            android:text="@string/next"
+
+            android:textAllCaps="true" />
+    </GridLayout>
+</LinearLayout>

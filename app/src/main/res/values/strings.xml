@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyQuizApp</string>
+    <string name="quiz_app">Quiz App!</string>
+    <string name="welcome">Welcome</string>
+    <string name="please_enter_your_name">Please enter your name.</string>
+    <string name="name">Name</string>
+    <string name="start">Start</string>
+    <string name="flag">Flag</string>
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="prev">prev</string>
+    <string name="exit">exit</string>
+</resources>
